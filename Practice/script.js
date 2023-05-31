@@ -27,9 +27,13 @@ const scoreDolhins = calcAverage(85, 54, 41);
 const scoreKoalas = calcAverage(23, 34, 27);
 
 const checkWinner = function(avgDolhins, avgKoalas) {
-    if (avgDolhins > avgKoalas * 2) console.log(`Dolhins win (${avgDolhins} vs. ${avgKoalas})`);
-    else if (avgKoalas > avgDolhins * 2) console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`);
-    else console.log(`no team win (${avgDolhins} vs. ${avgKoalas})`)
+    if (avgDolhins > avgKoalas * 2) {
+        console.log(`Dolhins win (${avgDolhins} vs. ${avgKoalas})`);
+    }else if (avgKoalas > avgDolhins * 2) {
+        console.log(`Koalas win (${avgKoalas} vs. ${avgDolhins})`);
+    }else {
+        console.log(`no team win (${avgDolhins} vs. ${avgKoalas})`)
+    }
 }
 
 console.log(checkWinner(scoreDolhins, scoreKoalas));
