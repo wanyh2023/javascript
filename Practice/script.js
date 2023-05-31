@@ -36,4 +36,4 @@ const checkWinner = function(avgDolhins, avgKoalas) {
     }
 }
 
-console.log(checkWinner(scoreDolhins, scoreKoalas));
+checkWinner(scoreDolhins, scoreKoalas);
